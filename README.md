@@ -1,5 +1,6 @@
 Baloise Gold Cards 
 ==================
+
 Mission Statement
 -----------------
 At Baloise, we foster creativity and encourage every team member to invest in
