@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset=utf-8>
+<title>Hello InnerFrame</title>
+  
+<script language="JavaScript" type="text/javascript">
+<!-- 
+        function CallBack () {
+            var frame = window.parent;
+            var message = document.getElementById("textto").value;
+            if (frame.postMessage) {
+                frame.postMessage (message, "*");
+            }
+            else {
+                alert ("Your browser does not support the postMessage method!");
+            }
+        }
+// -->
+</script>
+</head>
+<body id="InnerWidget">
+  <p><textarea id="textto" rows="10" cols="80">Hello World. Please send me via postmessage to the outer Frame and then to the Java-Callback.</textarea></p>
+  <p><input type="button" value="Click to send" onclick="CallBack()"></p>
+</body>
+</html>
