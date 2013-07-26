@@ -70,12 +70,13 @@ public class JWebView extends JFrame {
   }
 
   /**
-   * Called from JavaScript (from WebEngine).
+   * Called from JavaScript (inside WebEngine).
    */
   public void callback(final String aOrigin, final String aMessage) {
     SwingUtilities.invokeLater(new Runnable() {
       public void run() {
-        JOptionPane.showMessageDialog(JWebView.this, "Origin="+aOrigin + "\nMessage=" + aMessage);
+        JOptionPane.showMessageDialog(
+            JWebView.this, "Origin = " + aOrigin + "\nMessage = " + aMessage);
       }
     });
   }
