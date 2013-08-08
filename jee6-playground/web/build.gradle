@@ -1,9 +1,0 @@
-apply plugin: 'war'
-
-dependencies {
-    compile project(':ejb')
-}
-
-war {
-    baseName = "$rootProject.name-$project.name"
-}

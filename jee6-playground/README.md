@@ -1,1 +1,0 @@
-Gradle-based JEE 6 Project to explore EJB 3 / Servlet 3 / CDI Concepts
