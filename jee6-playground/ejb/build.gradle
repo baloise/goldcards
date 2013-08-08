@@ -1,0 +1,5 @@
+apply plugin: 'java'
+
+jar {
+    baseName = "$rootProject.name-$project.name"
+}

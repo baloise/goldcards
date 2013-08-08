@@ -1,0 +1,17 @@
+allprojects {
+    apply plugin: "java"
+    version = "0.4-SNAPSHOT"
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        compile "javax:javaee-api:6.0"
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+}
