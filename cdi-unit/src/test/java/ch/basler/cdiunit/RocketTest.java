@@ -1,23 +1,25 @@
 package ch.basler.cdiunit;
 
-import org.junit.Before;
+import org.jglue.cdiunit.CdiRunner;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+
+import javax.enterprise.inject.Produces;
+import javax.inject.Inject;
 
 import static org.junit.Assert.assertEquals;
 
+@RunWith(CdiRunner.class)
 public class RocketTest {
 
+  @Produces
+  @Mock
   private Engine mockEngine;
 
+  @Inject
   private Rocket rocket;
-
-  @Before
-  public void before() {
-    this.mockEngine = Mockito.mock(Engine.class);
-    this.rocket = new Rocket();
-    this.rocket.setEngine(mockEngine);
-  }
 
   @Test
   public void launch() {
