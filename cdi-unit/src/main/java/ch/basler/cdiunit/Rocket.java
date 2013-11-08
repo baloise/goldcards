@@ -1,14 +1,29 @@
 package ch.basler.cdiunit;
 
-import javax.inject.Inject;
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
 
+@Stateless
 public class Rocket {
 
-  @Inject
+  @EJB
   private Engine engine;
 
+  @PostConstruct
+  public String postConstruct() {
+    return engine.ignite();
+  }
+
   public String launch() {
-    return engine.start();
+    return "Launching via " + engine.boost();
+  }
+
+  /**
+  * ACHTUNG: Bitte nur aus Tests aufrufen!
+  */
+  public void setEngine(Engine engine) {
+    this.engine = engine;
   }
 
 }
