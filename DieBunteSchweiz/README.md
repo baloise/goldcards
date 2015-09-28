@@ -19,8 +19,10 @@ Steal one:
 
 https://github.com/interactivethings/swiss-maps#examples 
 
+```
 wget http://bl.ocks.org/mbostock/raw/4207744/ 
 wget http://bl.ocks.org/mbostock/raw/4207744/readme-swiss.json 
+```
 
 ### Data
 
@@ -28,8 +30,9 @@ DurschSchnittsalter.sql -> alter.json
 
 ### All together
 
-canton style löschen
+canton style lÃ¶schen
 
+```
 function color(v){
 	var off = 48;
 	var step = 0.5;
@@ -60,6 +63,7 @@ d3.json("alter.json", function(error, alter) {
 	.text(function(d) {return d.properties.name +" "+ parseInt(alter[d.id]*10)/10;});
 	...
 }
+```
 
 ## map
 https://test-target.balgroupit.com/rad/map/?lang=en&labels=hidden
