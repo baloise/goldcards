@@ -1,23 +1,22 @@
 # Die bunte Schweiz - Daten auf einer Karte Visualisieren
 ## dj.js
-http://bl.ocks.org/mbostock
+* http://bl.ocks.org/mbostock
 ### TopoJSON
-https://en.wikipedia.org/wiki/GeoJSON#TopoJSON_Schema
-https://github.com/mbostock/topojson/wiki
-
-http://bost.ocks.org/mike/map/
+* https://en.wikipedia.org/wiki/GeoJSON#TopoJSON_Schema
+* https://github.com/mbostock/topojson/wiki
+* http://bost.ocks.org/mike/map/
 
 ### The shape
 
-https://github.com/interactivethings/swiss-maps
-
+* https://github.com/interactivethings/swiss-maps
+```
 mapshaper combine-files encoding=utf8 *.shp -o map.json format=topojson
 mapshaper map.json encoding=utf8 -info
 mapshaper map.json -dissolve PLZ target=PLZO_PLZ -simplify visvalingam 2% -o format=topojson map.simple.json
-
+```
 Steal one:
 
-https://github.com/interactivethings/swiss-maps#examples 
+* https://github.com/interactivethings/swiss-maps#examples 
 
 ```
 wget http://bl.ocks.org/mbostock/raw/4207744/ 
@@ -66,12 +65,12 @@ d3.json("alter.json", function(error, alter) {
 ```
 
 ## map
-https://test-target.balgroupit.com/rad/map/?lang=en&labels=hidden
+* https://test-target.balgroupit.com/rad/map/?lang=en&labels=hidden
 
 ### more features
-http://eligrey.com/demos/FileSaver.js/
-https://github.com/sterlingwes/RandomColor
-http://html5demos.com/file-api
-replaceState()
-CORS
+* http://eligrey.com/demos/FileSaver.js/
+* https://github.com/sterlingwes/RandomColor
+* http://html5demos.com/file-api
+* replaceState()
+* CORS
 
