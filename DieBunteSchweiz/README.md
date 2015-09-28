@@ -31,7 +31,7 @@ DurschSchnittsalter.sql -> alter.json
 
 canton style löschen
 
-```
+```javascript
 function color(v){
 	var off = 48;
 	var step = 0.5;
