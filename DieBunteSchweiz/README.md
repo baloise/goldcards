@@ -65,6 +65,8 @@ d3.json("alter.json", function(error, alter) {
 }
 ```
 
+Die faule Variante: http://datamaps.github.io/
+
 ## map
 * https://test-target.balgroupit.com/rad/map/?lang=en&labels=hidden
 
