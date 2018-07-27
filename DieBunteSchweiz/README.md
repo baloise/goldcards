@@ -1,5 +1,5 @@
 # Die bunte Schweiz - Daten auf einer Karte Visualisieren
-## d3j.js
+## d3.js
 * http://bl.ocks.org/mbostock
 
 ### TopoJSON
