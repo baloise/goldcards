@@ -1,4 +1,4 @@
-Baloise Gold Cards 
+Gold Cards 
 ==================
 
 Mission Statement
